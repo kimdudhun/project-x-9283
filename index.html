@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Design Tools Hub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="gnb">
+        <div class="gnb-container">
+            <h1 class="gnb-logo">Hub</h1>
+            <button class="gnb-search" aria-label="검색">
+                <svg width="16" height="16" viewBox="0 0 20 20" fill="none">
+                    <circle cx="8" cy="8" r="6" stroke="currentColor" stroke-width="2"/>
+                    <path d="M12.5 12.5L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="content-wrapper">
+            <div class="category-tabs">
+                <button class="category-tab active" data-category="all">All</button>
+                <button class="category-tab" data-category="design">디자인</button>
+                <button class="category-tab" data-category="contents">콘텐츠</button>
+                <button class="category-tab" data-category="admin">어드민</button>
+                <button class="category-tab" data-category="etc">기타</button>
+            </div>
+        </div>
+
+        <div class="cards-grid">
+            <!-- 이미지 프롬프트 생성기 -->
+            <a href="https://snow-vibe.io.naver.com/image-prompt-maker-test/" target="_blank" class="card card-with-image" data-category="contents">
+                <div class="card-image-wrapper">
+                    <img src="assets/image-prompt-maker.png" alt="이미지 프롬프트 생성기" class="card-image">
+                </div>
+                <div class="card-icon">✨</div>
+                <h3 class="card-title">이미지 프롬프트 생성기</h3>
+                <p class="card-description">AI 이미지 생성을 위한 프롬프트를 자동으로 만들어줍니다</p>
+                <div class="card-tag">이미지 생성 AI</div>
+            </a>
+
+            <!-- FlowDiff -->
+            <a href="https://flowdiff.io.naver.com/" target="_blank" class="card card-with-image" data-category="contents">
+                <div class="card-image-wrapper">
+                    <img src="assets/flowdiff.png" alt="프롬프트 튜닝 사이트 FlowDiff" class="card-image">
+                </div>
+                <div class="card-icon">🔄</div>
+                <h3 class="card-title">프롬프트 튜닝 사이트 FlowDiff</h3>
+                <p class="card-description">프롬프트 튜닝 및 이미지 비교 도구</p>
+                <div class="card-tag">프롬프트 튜닝 • JSON 비교 • 이미지 비교</div>
+            </a>
+
+            <!-- AI Style 콘텐츠 관리 -->
+            <a href="http://aistyle2026.figma.site/" target="_blank" class="card card-with-image" data-category="admin">
+                <div class="card-image-wrapper">
+                    <img src="assets/ai-style-admin.png" alt="AI Style Admin" class="card-image">
+                </div>
+                <div class="card-icon">🎯</div>
+                <h3 class="card-title">AI Style Admin</h3>
+                <p class="card-description">AI 스타일 콘텐츠를 관리하는 어드민 사이트</p>
+                <div class="card-tag">어드민 도구</div>
+            </a>
+
+            <!-- 앱스토어 스크린샷 디자인 탐색기 -->
+            <a href="https://dart-terms-39337841.figma.site/" target="_blank" class="card card-with-image" data-category="design">
+                <div class="card-image-wrapper">
+                    <img src="assets/appstore-screenshot.png" alt="앱스토어 스크린샷 디자인 탐색기" class="card-image">
+                </div>
+                <div class="card-icon">📱</div>
+                <h3 class="card-title">앱스토어 스크린샷 디자인 탐색기</h3>
+                <p class="card-description">앱스토어 앱 스크린샷 디자인을 탐색하고 분석합니다</p>
+                <div class="card-tag">디자인 리서치</div>
+            </a>
+
+            <!-- 배너 디자인 생성기 -->
+            <a href="http://10.66.85.42:3001/" target="_blank" class="card card-with-image" data-category="design">
+                <div class="card-image-wrapper">
+                    <img src="assets/banner-generator.png" alt="배너 디자인 생성기" class="card-image">
+                </div>
+                <div class="card-icon">🎪</div>
+                <h3 class="card-title">배너 디자인 생성기</h3>
+                <p class="card-description">자동으로 배너 디자인을 생성합니다</p>
+                <div class="card-tag">배너 생성</div>
+            </a>
+
+            <!-- 이미지 자동 크롭 -->
+            <a href="https://www.figma.com/make/mrsEjgFFPbaZ9VkZ7pV4hr/In-App-Promotion-Banner-Resizing?p=f&t=f6SWGzSW5sQYWlgi-0&fullscreen=1" target="_blank" class="card card-with-image" data-category="design contents etc">
+                <div class="card-image-wrapper">
+                    <img src="assets/image-auto-crop.png" alt="이미지 자동 크롭" class="card-image">
+                </div>
+                <div class="card-icon">✂️</div>
+                <h3 class="card-title">이미지 자동 크롭</h3>
+                <p class="card-description">이미지를 자동으로 크롭하고 저장합니다</p>
+                <div class="card-tag">이미지 크롭 도구</div>
+            </a>
+
+            <!-- wikit 템플릿 생성 -->
+            <a href="https://dev-wikit-ai-demo.io.naver.com/" target="_blank" class="card card-with-image" data-category="contents">
+                <div class="card-image-wrapper">
+                    <img src="assets/template.jpg" alt="wikit 템플릿 생성기" class="card-image">
+                </div>
+                <div class="card-icon">📄</div>
+                <h3 class="card-title">Wikit 템플릿 생성기</h3>
+                <p class="card-description">wikit 템플릿을 자동으로 생성합니다</p>
+                <div class="card-tag">템플릿 생성 도구</div>
+            </a>
+
+            <!-- 썸네일 자동 생성 -->
+            <a href="https://log-pastel-54058422.figma.site/" target="_blank" class="card card-with-image" data-category="contents">
+                <div class="card-image-wrapper">
+                    <img src="assets/thumbnail-generator.png" alt="썸네일 자동 생성기" class="card-image">
+                </div>
+                <div class="card-icon">🖼️</div>
+                <h3 class="card-title">썸네일 자동 생성기</h3>
+                <p class="card-description">콘텐츠에 맞는 썸네일을 자동으로 생성합니다</p>
+                <div class="card-tag">자동화 도구</div>
+            </a>
+
+            <!-- 비디오 프롬프트 생성기 -->
+            <a href="https://abcxyz123.store/" target="_blank" class="card card-with-image" data-category="contents etc">
+                <div class="card-image-wrapper">
+                    <img src="assets/video-prompt-maker.png" alt="비디오 프롬프트 생성기" class="card-image">
+                </div>
+                <div class="card-icon">🎬</div>
+                <h3 class="card-title">비디오 프롬프트 생성기</h3>
+                <p class="card-description">AI 비디오 생성을 위한 프롬프트를 만듭니다</p>
+                <div class="card-tag">비디오 AI</div>
+            </a>
+
+            <!-- UI 분석 사이트 -->
+            <a href="https://ux-olivelim9007.replit.app/" target="_blank" class="card card-with-image" data-category="design">
+                <div class="card-image-wrapper">
+                    <img src="assets/ui-analysis.png" alt="UI 분석 사이트" class="card-image">
+                </div>
+                <div class="card-icon">🔍</div>
+                <h3 class="card-title">UI 분석 사이트</h3>
+                <p class="card-description">UI/UX 디자인을 분석하고 개선점을 찾습니다</p>
+                <div class="card-tag">UX 분석</div>
+            </a>
+
+            <!-- 이미지 팬트리 -->
+            <a href="http://pantry-cookbook.navercorp.com/#/" target="_blank" class="card card-with-image" data-category="design contents">
+                <div class="card-image-wrapper">
+                    <img src="assets/image-pantry.png" alt="이미지 팬트리" class="card-image">
+                </div>
+                <div class="card-icon">🗂️</div>
+                <h3 class="card-title">이미지 팬트리</h3>
+                <p class="card-description">이미지 리소스를 체계적으로 관리합니다</p>
+                <div class="card-tag">이미지 관리</div>
+            </a>
+
+            <!-- LUT 필터 생성기 -->
+            <a href="https://www.figma.com/make/3Nk53I0kmt5lmllQDW8Y4E/Color-Analysis-Dashboard?p=f&t=tF1xUVm3Fy7pwv0D-0" target="_blank" class="card card-with-image" data-category="contents">
+                <div class="card-image-wrapper">
+                    <img src="assets/lut_hub.jpg" alt="LUT 필터 생성기" class="card-image">
+                </div>
+                <div class="card-icon">🎨</div>
+                <h3 class="card-title">LUT 필터 생성기</h3>
+                <p class="card-description">커스텀 LUT 필터를 생성하고 적용합니다</p>
+                <div class="card-tag">필터 생성</div>
+            </a>
+        </div>
+
+        <footer class="footer">
+            <p>SnowAI © 2014–2026</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
